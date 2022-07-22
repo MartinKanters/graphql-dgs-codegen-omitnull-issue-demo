@@ -1,0 +1,12 @@
+type Query {
+    userPool: UserPool
+}
+
+type UserPool {
+    user(id: String, name: String): [User]
+}
+
+type User {
+    id: String!
+    name: String!
+}
